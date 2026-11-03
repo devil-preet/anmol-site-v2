@@ -301,13 +301,24 @@
   if (fine && !reduce) {
     const ring = $("#cursorRing"), dot = $("#cursorDot");
     let x = innerWidth / 2, y = innerHeight / 2, rx = x, ry = y;
+    function setState(el) {
+      const inTile = !!el?.closest("#gallery button");
+      ring.classList.toggle("view", inTile);
+      ring.classList.toggle("link", !inTile && !!el?.closest("a,button,summary,input,select,label"));
+    }
     addEventListener("pointermove", e => {
       x = e.clientX; y = e.clientY;
       ring.classList.add("show"); dot.classList.add("show");
       dot.style.transform = `translate(${x}px,${y}px)`;
-      const inTile = !!e.target.closest("#gallery button");
-      ring.classList.toggle("view", inTile);
-      ring.classList.toggle("link", !inTile && !!e.target.closest("a,button,summary,input,select,label"));
+      root.classList.add("has-cursor");          // hide the system cursor once ours is live
+      setState(e.target);
+    }, { passive: true });
+    // the page moves under a still mouse when scrolling, so re-check what is under the pointer
+    let pending = false;
+    addEventListener("scroll", () => {
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(() => { pending = false; setState(document.elementFromPoint(x, y)); });
     }, { passive: true });
     document.addEventListener("pointerleave", () => { ring.classList.remove("show"); dot.classList.remove("show"); });
     (function follow() {

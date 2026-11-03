@@ -382,3 +382,6 @@ html.js:not(.loaded){overflow:hidden}
 
 /* parallax inside gallery tiles (independent translate/scale properties) */
 .gallery button img{scale:1.14;translate:0 var(--py,0%)}
+
+/* system cursor hidden only once the custom cursor is active (mouse devices) */
+@media (hover:hover) and (pointer:fine){html.has-cursor,html.has-cursor *{cursor:none!important}}
