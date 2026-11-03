@@ -187,7 +187,7 @@
         } else if (n.nodeType === 1 && n.tagName !== "BR") walk(n);
       });
       walk(h);
-      h.classList.add("split");
+      h.classList.add("words");
       h.style.transitionDelay = "0ms";
     });
   })();

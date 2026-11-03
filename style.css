@@ -324,7 +324,7 @@ html.js:not(.loaded){overflow:hidden}
 .js .marquee-track{animation:none;will-change:transform}
 
 /* split headings: words rise from a mask */
-.js h2.split{opacity:1;transform:none}
+.js h2.words{opacity:1;transform:none}
 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
 .w>span{display:inline-block;transform:translateY(110%) rotate(4deg);transform-origin:left bottom;transition:transform 1.1s var(--ease);transition-delay:calc(var(--i)*60ms)}
 .in .w>span{transform:none}
