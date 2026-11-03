@@ -443,10 +443,20 @@
     const st = makeStage(lib, canvas, small, hero);
     const { THREE, renderer, scene, camera, ptr } = st;
     const R = Math.random;
-    const { kinds, items } = st.build(small ? [3, 3, 7, 2] : [5, 5, 13, 3], () => {
-      // spread across the whole hero; the headline sits above the canvas so text stays crisp
-      return [R() * 2 - 1, R() * 2 - 1];
-    }, .4);
+    const counts = small ? [3, 3, 7, 2] : [5, 5, 13, 3];
+    // Even spread: jittered grid cells, split into a left half and a right half, then
+    // handed out alternately so both sides get the same number of every kind of jewel.
+    const total = counts.reduce((a, b) => a + b, 0);
+    const cols = small ? 4 : 8, rows = Math.ceil(total / cols);
+    const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(R() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+    const left = [], right = [];
+    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
+      const cell = [(c + .15 + R() * .7) / cols * 2 - 1, (r + .15 + R() * .7) / rows * 2 - 1];
+      (c < cols / 2 ? left : right).push(cell);
+    }
+    shuffle(left); shuffle(right);
+    let turn = 0;
+    const { kinds, items } = st.build(counts, () => (turn++ % 2 === 0 ? left : right).pop(), .4);
 
     const dummy = new THREE.Object3D();
     let start = null;
