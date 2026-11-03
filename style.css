@@ -364,3 +364,21 @@ html.js:not(.loaded){overflow:hidden}
 
 /* page-long jewels in the margins */
 .gl-fixed{position:fixed;inset:0;width:100%;height:100%;z-index:60;pointer-events:none;opacity:0}
+
+/* ===== V3: shader transitions, rising sections, deeper gallery ===== */
+#wipeGl{position:absolute;inset:0;width:100%;height:100%;display:none}
+.wipe.gl{transform:none;background:transparent}
+.wipe.gl::before,.wipe.gl::after{display:none}
+.wipe.gl #wipeGl{display:block}
+.wipe.intro{z-index:320}
+.wipe.gl .wipe-mark,.wipe.gl .wipe-label{position:relative;opacity:0;transition:opacity .45s var(--ease),transform .7s var(--ease);transform:translateY(14px)}
+.wipe.gl .wipe-label{position:absolute}
+.wipe.gl.show .wipe-mark,.wipe.gl.show .wipe-label{opacity:1;transform:none}
+.loader.fade .loader-in{opacity:0;transform:translateY(-20px)}
+
+/* sections rise as rounded cards, then square off (radius driven by scroll) */
+.dark,.contact,.tint{border-radius:var(--r,0px) var(--r,0px) 0 0;margin-top:-48px;padding-top:calc(110px + 48px);position:relative}
+@media (max-width:600px){.dark,.contact,.tint{padding-top:calc(76px + 48px)}}
+
+/* parallax inside gallery tiles (independent translate/scale properties) */
+.gallery button img{scale:1.14;translate:0 var(--py,0%)}
