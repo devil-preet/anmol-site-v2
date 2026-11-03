@@ -432,7 +432,7 @@
     const st = makeStage(lib, canvas, small, hero);
     const { THREE, renderer, scene, camera, ptr } = st;
     const R = Math.random;
-    const { kinds, items } = st.build(small ? [14, 16, 14, 10] : [44, 46, 44, 30], () => {
+    const { kinds, items } = st.build(small ? [14, 16, 36, 10] : [44, 46, 110, 30], () => {
       // mostly clear of the headline; a few tiny, dim ones sit far behind the text for depth
       if (!small && R() < .07) return [-.9 + R() * .9, R() * 2 - 1, -5 + R() * 1.2];
       let nx, ny;
@@ -486,7 +486,7 @@
     const st = makeStage(lib, canvas, small, null);
     const { THREE, renderer, scene, camera, ptr } = st;
     const R = Math.random;
-    const { kinds, items } = st.build(small ? [6, 7, 6, 4] : [16, 18, 16, 12], () => {
+    const { kinds, items } = st.build(small ? [6, 7, 16, 4] : [16, 18, 42, 12], () => {
       const side = R() < .5 ? -1 : 1;
       const edge = small ? .9 + R() * .12 : .91 + R() * .11;
       return [side * edge, R() * 2 - 1];
