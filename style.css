@@ -361,3 +361,6 @@ html.js:not(.loaded){overflow:hidden}
 @media (max-width:980px){
   .gl{height:100%}
 }
+
+/* page-long jewels in the margins */
+.gl-fixed{position:fixed;inset:0;width:100%;height:100%;z-index:60;pointer-events:none;opacity:0}
