@@ -443,7 +443,7 @@
     const st = makeStage(lib, canvas, small, hero);
     const { THREE, renderer, scene, camera, ptr } = st;
     const R = Math.random;
-    const { kinds, items } = st.build(small ? [14, 16, 36, 10] : [44, 46, 110, 30], () => {
+    const { kinds, items } = st.build(small ? [3, 3, 6, 2] : [5, 5, 12, 3], () => {
       // mostly clear of the headline; a few tiny, dim ones sit far behind the text for depth
       if (!small && R() < .07) return [-.9 + R() * .9, R() * 2 - 1, -5 + R() * 1.2];
       let nx, ny;
