@@ -443,16 +443,9 @@
     const st = makeStage(lib, canvas, small, hero);
     const { THREE, renderer, scene, camera, ptr } = st;
     const R = Math.random;
-    const { kinds, items } = st.build(small ? [3, 3, 6, 2] : [5, 5, 12, 3], () => {
-      // mostly clear of the headline; a few tiny, dim ones sit far behind the text for depth
-      if (!small && R() < .07) return [-.9 + R() * .9, R() * 2 - 1, -5 + R() * 1.2];
-      let nx, ny;
-      for (let g = 0; g < 60; g++) {
-        nx = R() * 2 - 1; ny = R() * 2 - 1;
-        const ok = small ? ny > .25 : (nx > .02 || (nx > -.9 && Math.abs(ny) > .88));
-        if (ok) break;
-      }
-      return [nx, ny];
+    const { kinds, items } = st.build(small ? [3, 3, 7, 2] : [5, 5, 13, 3], () => {
+      // spread across the whole hero; the headline sits above the canvas so text stays crisp
+      return [R() * 2 - 1, R() * 2 - 1];
     }, .4);
 
     const dummy = new THREE.Object3D();
