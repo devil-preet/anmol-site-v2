@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anmol — Hand-Embellishment Partner for Boutiques in Chandigarh, Mohali & Panchkula</title>
+<meta name="description" content="Season rush? Anmol handles the time-intensive hand finishing — mirror, pearl, stone, sippi and bead work — so your master karigars can take more orders. Serving boutiques across the Tricity.">
+<meta name="theme-color" content="#2b0d18">
+<meta property="og:title" content="Anmol — Hand-Embellishment Partner for Tricity Boutiques">
+<meta property="og:description" content="Your skilled karigars stay on the signature work. I finish the rest. Take more orders this wedding season.">
+<meta property="og:image" content="img/17.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232b0d18' stroke='%23b8893a' stroke-width='3'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23d9b56b'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-in">
+    <span class="brand-mark">A</span>
+    <span class="loader-name">Anmol</span>
+    <span class="loader-tag">Hand Embellishment</span>
+    <div class="loader-bar"><i id="loaderBar"></i></div>
+    <b id="loaderNum">0</b>
+  </div>
+</div>
+<div class="wipe" id="wipe" aria-hidden="true"><span class="wipe-mark">A</span><span class="wipe-label" id="wipeLabel"></span></div>
+<div class="cursor-ring" id="cursorRing"><span>View</span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<a class="skip" href="#work">Skip to the work</a>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Anmol — home">
+    <span class="brand-mark">A</span>
+    <span class="brand-text">Anmol<small>Hand Embellishment</small></span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Main">
+    <a href="#work">The Work</a>
+    <a href="#how">How it works</a>
+    <a href="#why">Why it pays</a>
+    <a href="#terms">Pricing</a>
+    <a href="#faq">Questions</a>
+    <a class="btn btn-gold btn-sm" href="#contact">Start a trial piece</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="heroSec">
+  <canvas class="gl" id="gl" aria-hidden="true"></canvas>
+  <div class="hero-text">
+    <p class="eyebrow">Boutiques of Chandigarh · Mohali · Panchkula</p>
+    <h1>
+      <span class="line"><span>Your best karigars</span></span>
+      <span class="line"><span>on your best work.</span></span>
+      <span class="line"><span><em>I'll finish the rest.</em></span></span>
+    </h1>
+    <p class="lead">Wedding season sends more orders than any boutique has hands for. I take over the time-heavy hand finishing — mirror, pearl, stone, sippi and bead work — so your skilled team stays on the signature embroidery and your order book keeps growing.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#contact">Give me one piece to prove it</a>
+      <a class="btn btn-light" href="#work">See the work ↓</a>
+    </div>
+    <ul class="hero-points">
+      <li>Materials supplied by you</li>
+      <li>Per piece or per hour</li>
+      <li>Built for the short season</li>
+    </ul>
+  </div>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-col up">
+      <img src="img/17.jpg" alt=""><img src="img/35.jpg" alt=""><img src="img/1.jpg" alt=""><img src="img/28.jpg" alt=""><img src="img/7.jpg" alt=""><img src="img/31.jpg" alt="">
+      <img src="img/17.jpg" alt=""><img src="img/35.jpg" alt=""><img src="img/1.jpg" alt=""><img src="img/28.jpg" alt=""><img src="img/7.jpg" alt=""><img src="img/31.jpg" alt="">
+    </div>
+    <div class="strip-col down">
+      <img src="img/12.jpg" alt=""><img src="img/21.jpg" alt=""><img src="img/16.jpg" alt=""><img src="img/30.jpg" alt=""><img src="img/18.jpg" alt=""><img src="img/29.jpg" alt="">
+      <img src="img/12.jpg" alt=""><img src="img/21.jpg" alt=""><img src="img/16.jpg" alt=""><img src="img/30.jpg" alt=""><img src="img/18.jpg" alt=""><img src="img/29.jpg" alt="">
+    </div>
+    <div class="strip-col up slow">
+      <img src="img/9.jpg" alt=""><img src="img/15.jpg" alt=""><img src="img/38.jpg" alt=""><img src="img/10.jpg" alt=""><img src="img/33.jpg" alt=""><img src="img/24.jpg" alt="">
+      <img src="img/9.jpg" alt=""><img src="img/15.jpg" alt=""><img src="img/38.jpg" alt=""><img src="img/10.jpg" alt=""><img src="img/33.jpg" alt=""><img src="img/24.jpg" alt="">
+    </div>
+  </div>
+  <a class="scroll-cue" href="#work" aria-label="Scroll to the work"><span></span></a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Sippi work</span><i>◆</i><span>Mirror work</span><i>◆</i><span>Stone work</span><i>◆</i><span>Pearl work</span><i>◆</i><span>Bead &amp; dana</span><i>◆</i><span>Sequin work</span><i>◆</i><span>Latkan &amp; tassels</span><i>◆</i><span>Lace &amp; border fixing</span><i>◆</i>
+    <span>Sippi work</span><i>◆</i><span>Mirror work</span><i>◆</i><span>Stone work</span><i>◆</i><span>Pearl work</span><i>◆</i><span>Bead &amp; dana</span><i>◆</i><span>Sequin work</span><i>◆</i><span>Latkan &amp; tassels</span><i>◆</i><span>Lace &amp; border fixing</span><i>◆</i>
+  </div>
+</div>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="work-head">
+      <div>
+        <p class="eyebrow">The work</p>
+        <h2 class="rv">The finishing I take on.</h2>
+      </div>
+      <p class="rv">Mirror and kundan borders, pearl florals, bugle-bead vines, sequin lattices, crystal drops. Filter by craft, tap any piece to see it full screen.</p>
+    </div>
+
+    <div class="chips" id="chips" role="tablist" aria-label="Filter by craft">
+      <button class="chip on" data-f="all">All</button>
+      <button class="chip" data-f="mirror">Mirror &amp; Kundan</button>
+      <button class="chip" data-f="pearl">Pearl</button>
+      <button class="chip" data-f="sequin">Sequin &amp; Sippi</button>
+      <button class="chip" data-f="bead">Beadwork</button>
+      <button class="chip" data-f="stone">Stone &amp; Crystal</button>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <button data-cat="mirror"><img loading="lazy" src="img/17.jpg" alt="Mirror and gold wire floral work"><span>Mirror &amp; wire floral</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/28.jpg" alt="Pearl drop vines on a pink kurta"><span>Pearl-drop vines</span></button>
+      <button data-cat="mirror pearl"><img loading="lazy" src="img/1.jpg" alt="Teal kurta with mirror and pearl V-neck"><span>Mirror &amp; pearl neckline</span></button>
+      <button data-cat="sequin bead"><img loading="lazy" src="img/20.jpg" alt="Sequin flowers and bugle bead vines on dark velvet"><span>Sequin &amp; bugle vines</span></button>
+      <button data-cat="mirror stone"><img loading="lazy" src="img/12.jpg" alt="Kundan stone sleeve slit with pearl chains"><span>Kundan &amp; pearl-chain slit</span></button>
+      <button data-cat="pearl"><img loading="lazy" src="img/35.jpg" alt="Pearl chevron on a beige sleeve"><span>Pearl chevron sleeve</span></button>
+      <button data-cat="sequin bead"><img loading="lazy" src="img/16.jpg" alt="Sequin and cutdana diamond lattice"><span>Sequin lattice</span></button>
+      <button data-cat="pearl stone"><img loading="lazy" src="img/18.jpg" alt="Pearl and stone floral neckline"><span>Pearl &amp; stone neckline</span></button>
+      <button data-cat="bead"><img loading="lazy" src="img/30.jpg" alt="Gold bead vines on a maroon kurta"><span>Gold bead vines</span></button>
+      <button data-cat="sequin pearl"><img loading="lazy" src="img/3.jpg" alt="Sequin and pearl flower border"><span>Sequin flower border</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/29.jpg" alt="Pearl flowers and gold beads on pink velvet"><span>Pearl flowers on velvet</span></button>
+      <button data-cat="stone bead"><img loading="lazy" src="img/38.jpg" alt="Crystal and bugle bead star motifs on black"><span>Crystal star motifs</span></button>
+      <button data-cat="sequin bead"><img loading="lazy" src="img/7.jpg" alt="Sequin flowers with bugle bead leaves"><span>Bugle-bead vine</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/9.jpg" alt="Pearl and bead dupatta border"><span>Pearl dupatta edge</span></button>
+      <button data-cat="stone bead"><img loading="lazy" src="img/15.jpg" alt="Gold tissue blouse with stone and bead motifs"><span>Stone &amp; bead motifs</span></button>
+      <button data-cat="pearl"><img loading="lazy" src="img/21.jpg" alt="Pearl and gold chain work on a black velvet sleeve"><span>Pearl &amp; chain sleeve</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/11.jpg" alt="Delicate pearl and bead branch work"><span>Pearl branch work</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/31.jpg" alt="Pearl and twisted cord branch on teal"><span>Pearl &amp; cord branch</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/10.jpg" alt="Gold star pearl motifs on a sleeve"><span>Gold star sleeve motifs</span></button>
+      <button data-cat="stone bead"><img loading="lazy" src="img/32.jpg" alt="Bugle bead and crystal zigzag trim"><span>Bugle &amp; crystal zigzag</span></button>
+      <button data-cat="mirror stone"><img loading="lazy" src="img/14.jpg" alt="Kundan petal flower motif"><span>Kundan petal motif</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/33.jpg" alt="Pearl and crystal bead neckline trim"><span>Pearl &amp; crystal neckline</span></button>
+      <button data-cat="mirror stone"><img loading="lazy" src="img/13.jpg" alt="Kundan border sleeve panel"><span>Kundan border panel</span></button>
+      <button data-cat="pearl"><img loading="lazy" src="img/34.jpg" alt="Pearl cuff border on a black sleeve"><span>Pearl cuff border</span></button>
+      <button data-cat="bead"><img loading="lazy" src="img/19.jpg" alt="Red bead leaf embroidery on velvet"><span>Bead leaf work</span></button>
+      <button data-cat="sequin"><img loading="lazy" src="img/27.jpg" alt="Gold sequins scattered along a teal neckline"><span>Scattered sequin neckline</span></button>
+      <button data-cat="sequin pearl"><img loading="lazy" src="img/39.jpg" alt="Gold sequin and pearl borders on a velvet cuff"><span>Velvet cuff borders</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/8.jpg" alt="Gold bead and pearl scalloped neckline"><span>Beaded scallop edge</span></button>
+      <button data-cat="bead"><img loading="lazy" src="img/26.jpg" alt="Gold bead cross border on a maroon sleeve"><span>Gold bead X-border</span></button>
+      <button data-cat="bead stone"><img loading="lazy" src="img/36.jpg" alt="Crystal drop fringe edge"><span>Crystal-drop fringe</span></button>
+      <button data-cat="bead"><img loading="lazy" src="img/6.jpg" alt="Cream suit with leaf vine embroidery"><span>Vine &amp; scatter motifs</span></button>
+      <button data-cat="pearl"><img loading="lazy" src="img/37.jpg" alt="Pearl and gold chain trim"><span>Pearl chain trim</span></button>
+      <button data-cat="bead"><img loading="lazy" src="img/4.jpg" alt="Blue suit with embellished neckline and hem"><span>Neck, sleeve &amp; hem</span></button>
+      <button data-cat="pearl"><img loading="lazy" src="img/24.jpg" alt="Pearl scallop hem in two shades"><span>Two-tone pearl scallop</span></button>
+      <button data-cat="sequin bead"><img loading="lazy" src="img/2.jpg" alt="Green salwar with sequin and bead hem"><span>Sequin &amp; beaded hem</span></button>
+      <button data-cat="pearl bead"><img loading="lazy" src="img/23.jpg" alt="Pearl and silver bead drops on a grey hem"><span>Pearl bead drops</span></button>
+    </div>
+    <p class="center note rv">Have a design in mind? Send me a photo — I'll tell you straight whether and how fast I can finish it.</p>
+  </div>
+</section>
+
+<!-- NOTE FROM ANMOL -->
+<section class="section dark" id="about">
+  <div class="wrap letter rv">
+    <p class="eyebrow gold center">A note from me</p>
+    <p class="letter-text">I know what the season does to a boutique — more orders than hands. I'm not asking for a job at your counter. I'm offering you extra capacity for the weeks you need it most. Your clients, your designs and your name stay entirely yours. I simply take the hours so your best karigars can take more orders. Send me one piece and judge the finish yourself.</p>
+    <p class="sign">Anmol</p>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section tint" id="problem">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">The season squeeze</p>
+      <h2 class="rv">Demand peaks for a few months. Hiring for them never works.</h2>
+    </div>
+    <div class="prose rv">
+      <p>Every year, from festivals through the wedding months, orders arrive faster than a boutique's team can finish them. Hiring full-time karigars for just 2–4 months is hard, slow and risky — so most boutiques do the sensible thing and turn orders away.</p>
+      <p>That turned-away order is the real cost. It's revenue lost, and a client who may not come back.</p>
+      <p class="pull">The fix isn't more headcount. It's using the headcount you have on the work only they can do.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT -->
+<section class="section dark" id="how">
+  <div class="wrap">
+    <p class="eyebrow gold center">How the work is divided</p>
+    <h2 class="center rv">One suit. Two sets of hands. Twice the throughput.</h2>
+    <div class="cols">
+      <article class="col rv">
+        <span class="col-n">Your karigars</span>
+        <h3>The signature craft</h3>
+        <p>Aari, zardozi, intricate neckline and motif work — the skilled, high-polish embroidery your boutique is known for. This is where your best people create the most value.</p>
+        <ul><li>Complex embroidery</li><li>Design-defining motifs</li><li>Final quality control</li></ul>
+      </article>
+      <div class="plus" aria-hidden="true">+</div>
+      <article class="col gold-col rv">
+        <span class="col-n">Me, Anmol</span>
+        <h3>The time-heavy finishing</h3>
+        <p>The sippi, mirror, stone, pearl and bead work spread across a whole suit or dupatta. It needs care, not rare skill — but it can eat 3–4 hours a piece. I take those hours off your team.</p>
+        <ul><li>Mirror, stone &amp; pearl setting</li><li>Sippi, sequin &amp; bead filling</li><li>Dupatta borders &amp; scatter motifs</li></ul>
+      </article>
+    </div>
+    <p class="center note rv">Every 3–4 hours I take over is 3–4 hours your skilled karigar spends on the next order.</p>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="section" id="calc">
+  <div class="wrap calc">
+    <div>
+      <p class="eyebrow">See what you'd gain</p>
+      <h2 class="rv">Do the math on your own season.</h2>
+      <p class="prose rv">Put in your own numbers. This shows how much skilled time you'd free up, and how many extra orders that room could hold. Every figure is yours to change — nothing is assumed for you.</p>
+    </div>
+    <form class="calc-card rv" id="calcForm" onsubmit="return false">
+      <label>Pieces per month needing hand embellishment
+        <input type="number" id="cPieces" min="1" value="20" inputmode="numeric">
+      </label>
+      <label>Hours of fill work per piece <span class="hint">(sippi / mirror / stone / pearl)</span>
+        <input type="number" id="cHours" min="0.5" step="0.5" value="3.5" inputmode="decimal">
+      </label>
+      <label>Skilled-craft hours in one typical order
+        <input type="number" id="cSkilled" min="1" step="0.5" value="10" inputmode="decimal">
+      </label>
+      <div class="results">
+        <div><strong id="rHours">70</strong><span>skilled hours freed / month</span></div>
+        <div><strong id="rDays">9</strong><span>karigar-days back</span></div>
+        <div class="big"><strong id="rOrders">7</strong><span>extra orders your team can take</span></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section tint" id="why">
+  <div class="wrap">
+    <p class="eyebrow">Why it works for you</p>
+    <h2 class="rv">Built around your boutique's profit, not my need for work.</h2>
+    <div class="grid3">
+      <article class="rv"><span class="num">01</span><h3>Take the orders you refuse today</h3><p>More finishing capacity means yes instead of "we're full". Every extra order is revenue you were leaving on the table.</p></article>
+      <article class="rv"><span class="num">02</span><h3>No hiring, no idle payroll</h3><p>Pay only for work delivered, per piece or per hour. When the season ends, so does the cost. No notice periods, no dead months.</p></article>
+      <article class="rv"><span class="num">03</span><h3>Your best people do your best work</h3><p>Skilled karigars stop spending hours on fill work. Quality on the signature embroidery goes up, and so does their output.</p></article>
+      <article class="rv"><span class="num">04</span><h3>Zero equipment outlay</h3><p>You provide the materials and tools. I bring the hands — nothing to buy, set up or maintain on your side.</p></article>
+      <article class="rv"><span class="num">05</span><h3>Your brand stays yours</h3><p>I work to your design, your sample and your standards. I don't approach your clients. The piece leaves under your label.</p></article>
+      <article class="rv"><span class="num">06</span><h3>Deadlines agreed upfront</h3><p>Quantity, finish and delivery date are settled before I start, so wedding dates are planned for, not hoped for.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <p class="eyebrow">Getting started</p>
+    <h2 class="rv">Four steps. It starts with one piece.</h2>
+    <ol class="steps">
+      <li class="rv"><b>1</b><h3>Message me</h3><p>Tell me the kind of work and rough volume you have this season.</p></li>
+      <li class="rv"><b>2</b><h3>Trial piece</h3><p>Hand me one piece with your sample. You judge the finish before committing to anything more.</p></li>
+      <li class="rv"><b>3</b><h3>Agree the terms</h3><p>Per piece or hourly, quantity and delivery dates, agreed clearly up front.</p></li>
+      <li class="rv"><b>4</b><h3>Hand over the rush</h3><p>Orders flow, your karigars stay on the skilled work, and pieces come back finished on time.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section class="section tint" id="terms">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2 class="rv">Two simple ways to work. You choose.</h2>
+    <div class="price-cards">
+      <article class="rv">
+        <h3>Per piece</h3>
+        <p class="tagline">Best for repeat designs and fixed batches.</p>
+        <ul>
+          <li>A fixed rate per piece or per design</li>
+          <li>You know your cost before the order starts</li>
+          <li>Easy to build into your customer's quote</li>
+        </ul>
+      </article>
+      <article class="rv">
+        <h3>Per hour</h3>
+        <p class="tagline">Best for varied, one-off or custom work.</p>
+        <ul>
+          <li>A clear hourly rate for time worked</li>
+          <li>Flexible across different pieces in a day</li>
+          <li>Ideal for a few days of rush support</li>
+        </ul>
+      </article>
+    </div>
+    <p class="center note rv">Rates depend on the work, volume and timeline. Message me with a sample and I'll quote clearly, with no hidden extras.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section tint" id="faq">
+  <div class="wrap narrow-wrap">
+    <p class="eyebrow">Questions boutiques ask</p>
+    <h2 class="rv">Straight answers.</h2>
+    <details><summary>What if the finish isn't up to my standard?</summary><p>That's what the trial piece is for. You check it against your own standard before giving me anything more. If a piece needs correcting, I fix it.</p></details>
+    <details><summary>Do I have to provide the materials?</summary><p>Yes. You supply the stones, pearls, mirrors, sequins, beads and tools, so there's nothing for me to buy and your costing stays exactly as you planned it.</p></details>
+    <details><summary>Will you work with my clients directly?</summary><p>No. I work only through you. Your clients, your designs and your label stay entirely yours.</p></details>
+    <details><summary>I only need help for a few weeks. Is that okay?</summary><p>That's exactly who this is for. There's no long-term commitment. Use me for the rush, then stop when the season does.</p></details>
+    <details><summary>Where is the work done?</summary><p>Across Chandigarh, Mohali and Panchkula. We can decide at the start whether I work at your boutique or collect and deliver pieces, whichever suits your workflow.</p></details>
+    <details><summary>How do I get started?</summary><p>Message me on WhatsApp with a photo of the work. We'll fix a trial piece and take it from there.</p></details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow gold">Let's begin</p>
+      <h2 class="rv">Season won't wait.<br>Send me your first piece.</h2>
+      <p class="prose light rv">Tell me a little about your boutique and the work you need finished. I'll reply on WhatsApp the same day and we can set up a trial piece.</p>
+      <ul class="contact-list">
+        <li><span>WhatsApp / Call</span><a id="phoneLink" href="#">—</a></li>
+        <li><span>Serving</span>Chandigarh · Mohali · Panchkula</li>
+      </ul>
+    </div>
+    <form class="form rv" id="leadForm">
+      <label>Boutique name<input name="boutique" required placeholder="e.g. Rang Boutique"></label>
+      <label>Your name<input name="name" required></label>
+      <label>Area<select name="area"><option>Chandigarh</option><option>Mohali</option><option>Panchkula</option><option>Zirakpur / nearby</option></select></label>
+      <label>Type of work<select name="work"><option>Mirror / kundan work</option><option>Pearl / bead work</option><option>Sippi / sequin work</option><option>Stone work</option><option>A mix of these</option></select></label>
+      <label>Pieces this season (approx.)<input name="qty" type="number" min="1" placeholder="e.g. 15"></label>
+      <label>Preferred pricing<select name="mode"><option>Per piece</option><option>Per hour</option><option>Not sure — let's discuss</option></select></label>
+      <button class="btn btn-gold" type="submit">Message me on WhatsApp</button>
+      <p class="form-note">Opens WhatsApp with your details filled in. Nothing is stored on this site.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <span class="brand-text">Anmol<small>Hand Embellishment · Tricity</small></span>
+    <span>© <span id="yr"></span> Anmol. Crafted by hand.</span>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200c-1.500 0-2.900-.4-4.100-1.100l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100-1.400-.7-2.400-1.300-3.300-2.900-.1-.3.200-.3.700-1.200.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.8.800-1 1.600-.9 2.500.4 1.500 1.200 2.800 2.600 4 1.800 1.600 3.500 2.100 4.300 2.100.9 0 1.800-.7 2-1.300.2-.5.200-1 .1-1.100-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Previous">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav next" id="lbNext" aria-label="Next">›</button>
+</div>
+
+<script src="script.js"></script>
+<script src="fx.js"></script>
+</body>
+</html>
